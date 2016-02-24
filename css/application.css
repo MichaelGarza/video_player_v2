@@ -1,0 +1,116 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047; }
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: Arial, sans-serif; }
+
+.video-player {
+  position: absolute; }
+  .video-player .video {
+    width: 100%;
+    height: 100%; }
+
+.player {
+  background: rgba(142, 142, 142, 0.3);
+  position: relative;
+  z-index: 2;
+  bottom: 70px;
+  height: 66px;
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease-in;
+  transition: opacity 0.3s ease-in;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none; }
+
+.player .progress {
+  width: 97%;
+  height: 3.5px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 -5px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 0;
+  position: relative; }
+.player .progress-bar {
+  background: orange;
+  box-shadow: inset -30px 0px 69px -20px orange;
+  height: 100%;
+  position: relative;
+  z-index: 999;
+  width: 0; }
+.player [class^="buffered"] {
+  background: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  top: 0;
+  left: 30px;
+  height: 100%;
+  z-index: 1; }
+
+.player .controls-left {
+  float: left;
+  margin-top: 15px; }
+.player .play {
+  content: url(../icons/play-icon.png);
+  width: 22px;
+  height: 26px;
+  float: left;
+  margin-left: 15px;
+  cursor: pointer; }
+.player .pause-button {
+  content: url(../icons/pause-icon.png);
+  width: 22px;
+  height: 26px;
+  float: left;
+  margin-left: 15px;
+  cursor: pointer; }
+.player .play .pause-button,
+.player .pause .play-button {
+  display: none; }
+.player .time {
+  color: #fff;
+  height: 26px;
+  padding-top: 5px;
+  margin-left: 50px; }
+
+.player .controls-right {
+  float: right;
+  margin-top: 15px; }
+.player .v-change-11 span:before,
+.player .v-change-10 span:before,
+.player .v-change-9 span:before,
+.player .v-change-8 span:before,
+.player .v-change-7 span:before,
+.player .v-change-6 span:before,
+.player .v-change-5 span:before,
+.player .v-change-4 span:before,
+.player .v-change-3 span:before,
+.player .v-change-2 span:before {
+  content: url(../icons/volume-on-icon.png);
+  position: relative;
+  top: 6px;
+  right: 60px;
+  cursor: pointer; }
+.player .v-change-1 span:after {
+  content: url(../icons/volume-off-icon.png);
+  position: relative;
+  top: 6px;
+  right: 60px;
+  cursor: pointer; }
+.player .fullscreen {
+  content: url(../icons/fullscreen-icon.png);
+  position: relative;
+  bottom: 20px;
+  right: 15px;
+  cursor: pointer; }
+
+/*# sourceMappingURL=application.css.map */

@@ -1,0 +1,84 @@
+//Controls left mixin
+
+@mixin controls-left {
+  .controls-left {
+    float: left; 
+    margin-top: 15px; 
+  }
+}
+
+//Play-pause mixins
+
+@mixin play {
+  .play {
+    content:$play-icon;
+    width: 22px;
+    height: 26px;
+    float: left;
+    margin-left: 15px;
+    cursor: pointer;
+  }  
+}
+
+@mixin pause {
+  .pause-button {
+    content:$pause-icon;
+    width: 22px;
+    height: 26px;
+    float: left;
+    margin-left: 15px;
+    cursor: pointer;
+  }
+}
+
+//Controls right mixin
+
+@mixin controls-right {
+  .controls-right {
+    float: right; 
+    margin-top: 15px;
+  }
+}
+
+//Volume control icon mixins
+
+@mixin vol-on {
+  .v-change-11 span:before,
+  .v-change-10 span:before,
+  .v-change-9 span:before,
+  .v-change-8 span:before,
+  .v-change-7 span:before,
+  .v-change-6 span:before,
+  .v-change-5 span:before,
+  .v-change-4 span:before,
+  .v-change-3 span:before,
+  .v-change-2 span:before {
+    content: $vol-on-icon;
+    position: relative;
+    top: 6px;
+    right: 60px;
+    cursor: pointer;
+  }
+}
+
+@mixin vol-off {
+  .v-change-1 span:after {
+    content: $vol-off-icon;
+    position: relative;
+    top: 6px;
+    right: 60px;
+    cursor: pointer;
+  }
+}
+
+//Full screen mixin
+
+@mixin fullscreen {
+  .fullscreen {
+    content: $fullscreen-icon;
+    position: relative;
+    bottom: 20px;
+    right: 15px;
+    cursor: pointer;
+  }
+}
